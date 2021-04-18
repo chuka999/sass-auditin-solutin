@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Mulish', sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@-ms-viewport {
+    width: device-width;
+  }
+
+
+  body {
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    width:100%;
+  }
+
+  .container{
+    width:80%;
+    margin: 0 auto;
+  }
+
+  a {
+    color: #007bff;
+    text-decoration: none;
+    -webkit-text-decoration-skip: objects;
+    display: inline-block;
+    padding: 12px 24px;
+    text-align:center;
+    cursor: pointer;
+    width: 150px;
+    height: 45px;
+    margin-left:25px;
+    margin-top:8px;
+    border-radius: 5px;
+    font-size:13px;
+    border: 2px solid;
+  }
+  
+  a:hover {
+    color: white;
+    background-color:#007bff;
+    text-decoration: none;
+  }
+
+  a.active {
+    background-color: #007bff;
+    color: white;
+    width: 150px;
+    height: 45px;
+  }
+
+
+
+  .container .row  .col section{
+padding-top: 20px;
+  }
+
+  .container .row  .col section p{ 
+float:left;
+
+    }
+
+  .container .row  .col section a{ 
+float: right;
+}
+
+
+@media (max-width: 1200px) {
+    .container{
+        width:90%;
+        margin: 0 auto;
+      }
+
+.container .row  .col section p{ 
+    float:none;
+    text-align: center;
+
+}
+
+.container .row  .col section a{
+float:none;
+}
+
+.button{
+text-align: center;
+}
+
+}
+
+@media (max-width: 600px){
+.container .row  .col section a{
+display:block;
+margin: 10px auto;
+width: 300px;
+height: 50px;
+display: inline-block;
+padding: 15px 24px;
+}
+
+.button{
+text-align: center;
+}
+        
+
+}
